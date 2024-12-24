@@ -210,8 +210,8 @@ nav .right  a:last-child{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 800px;
-    height: 700px;
+    width: 40rem;
+    height: 40rem;
     padding: 20px;
     background: white;
     border: 1px solid #ccc;
@@ -343,6 +343,46 @@ nav .right  a:last-child{
         }
         nav .right a span {
             display: none;
+        }
+
+
+        /* Projects */
+
+        .projects .column {
+            flex-direction: column;
+        }
+    
+        .projects .group1,
+        .projects .group2 {
+            flex: unset; /* Remove equal division */
+            width: 100%; /* Make them span the full width */
+        }
+    
+        .projects .row1col1,
+        .projects .row2col1,
+        .projects .row1col2 {
+            width: 100%; /* Make individual rows span full width */
+        }
+
+        .popup {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 28rem;
+            height: 38rem;
+            padding: 20px;
+            background: white;
+            border: 1px solid #ccc;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            visibility: hidden;
+            opacity: 0;
+            transition: visibility 0.2s, opacity 0.2s;
+        }
+
+        .popup p {
+            font-size: 18px;
+            margin-top: 30px;
         }
 
         /* Contact */
