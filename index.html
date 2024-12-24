@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taiga's Website</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navbar -->
+     <nav>
+        <div class="left">
+            <a href="/">Taiga O'Donnell</a>
+        </div>
+        <div class="right">
+            <a href="http://github.com/TaigaODonnell"  target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-github"></i>
+                <span>Github</span>
+            </a>
+            <a href="https://www.linkedin.com/in/taiga-o-donnell-882853225/"  target="_blank" rel="noopener noreferrer">
+                <i class="fa-brands fa-linkedin"></i>
+                <span>LinkedIn</span>
+            </a>
+            <a href="mailto:taigaodonnell2001@gmail.com">
+                <i class="fa-solid fa-envelope"></i>
+                <span>Email</span>
+            </a>
+        </div>
+     </nav>
+     <main>
+        <!-- Hero -->
+        <section id = "hero">
+            <div class = "text">
+                <h2>Hello, I'm Taiga</h2>
+                <p>I'm an aspiring software engineer. I love to create things that people love to use on a daily basis.
+                   
+                </p>
+                <div class="links">
+                    <a href="#skills">
+                        <i class="fa-solid fa-hammer"></i>
+                        <span>Skills</span>
+                    </a>
+                    <a href="#projects">
+                        <i class="fa-solid fa-code"></i>
+                        <span>Projects</span>
+                    </a>
+                    <a href="#contacts">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Contacts</span>
+                    </a>
+                </div>
+            </div>
+            <div class = "headshot"> 
+                <!-- change to webp -->
+                <img src="images/self.jpg" alt="Taiga's headshot">
+            </div>
+        </section>
+        <!-- Skills -->
+        <section id = "skills" class = "skills">
+                <h2>Skills</h2>
+                <div class="text">
+                    Here are some of the tools and technologies I bring to the table.
+                </div>
+                <div class="cells">
+                    <div class="cell">
+                        <img src="images/c++.png" alt="language C logo">
+                        <span>C++</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/Flutter.png" alt="language Flutter logo">
+                        <span>Flutter</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/Dart.png" alt="language Dart logo">
+                        <span>Dart</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/SpringBoot.png" alt="language Spring boot logo">
+                        <span>Spring Boot</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/Java.png" alt="language Java logo">
+                        <span>Java</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/postgres.png" alt="language Sql logo">
+                        <span>PostgreSQL</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/Docker.png" alt="language Docker logo">
+                        <span>Docker</span>
+                    </div>
+                    <div class="cell">
+                        <img src="images/GCP.png" alt="language GCP logo">
+                        <span>Google Cloud Platform</span>
+                    </div>
+                </div>
+        </section>
+        <!-- Projects -->
+        <section id = "projects" class="projects">
+            <h2>Projects</h2>
+            <div class="column">
+                <div class="group1">
+                    <div class="row1col1">
+                        <div class="photo-container">
+                            <a href="#popup1">
+                                <img src="images/f.png" alt="Need to do logo">
+                            </a>
+                        </div>
+
+                        <div class="text">
+                            Need to Do
+                        </div>
+                    </div>
+                    <div class="row2col1">
+                        <div class="photo-container">
+                            <a href="#popup2">
+                                <img src="images/chicostate.jpg" alt="Chico state logo">
+                            </a>
+                        </div>
+                        <div class="text">
+                            Boyer Moore Project
+                        </div>
+                    </div>
+                 </div>
+
+                <div class="group2">
+                    <div class="row1col2">
+                        <div class="photo-container">
+                            <a href="#popup3">
+                                <img src="images/fightme.png" alt="FightMe! logo">
+                            </a>
+                        </div>
+                        <div class="text">
+                            Fight Me!
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Popup -->
+            <div id="popup1" class="popup">
+                <a href="#projects" class="close">&times;</a>
+                <div class="popup-content">
+                    <h3>Need-To-Do</h3>
+                    <a href="https://github.com/TaigaODonnell/Need-To-Do" target="_blank" rel="noopener noreferrer">
+                        <!-- pictures of the app -->
+                        <img src="images/f.png" alt="Need to do logo"> 
+
+                    </a>
+                    <p>This is a personal project app to help keep track of my daily tasks and to replace my notepad.
+                        Its mostly a to-do list with a calendar view. Has firebase authentication and tasks stored in 
+                        a firestore database.
+                    </p>
+                </div>
+            </div>
+
+            <div id="popup2" class="popup">
+                <a href="#projects" class="close">&times;</a>
+                <div class="popup-content">
+                    <h3>Boyer Moore Project</h3>
+                    <a href="https://github.com/TaigaODonnell/BoyerMooreProject411" target="_blank" rel="noopener noreferrer">
+                        <img src="images/chicostate.jpg" alt="Chico state logo">
+                    </a>
+                    <p>This was a class project for my Algorithms class. The Boyer Moore algorithm is a string matching
+                       algorithm that searches for a pattern within a text. It uses 2 different rules to find the pattern 
+                       to maximize the efficiency of the search. </p>
+                </div>
+            </div>
+
+            <div id="popup3" class="popup">
+                <a href="#projects" class="close">&times;</a>
+                <div class="popup-content">
+                    <h3>FightMe!</h3>
+                    <a href="https://github.com/ChicoState/FightMe" target="_blank" rel="noopener noreferrer">
+                        <img src="images/fightme.png" alt="FightMe! logo">
+                    </a>
+                    <p>This is a class project for my software engineering class. It is a messaging app with some gaming aspects
+                        built in. Designed and implemented most of the backend and created multiplayer gameplay with server-side
+                        gamestate management.
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!-- Contact -->
+        <section id = "contacts" class = "contacts">
+            <h2>Contact Me!</h2>
+            <div class="group">
+                <div class="text">
+                    I am a 4th Year Computer Science student at Chico State University and graduating in Spring 2025. 
+                    I am very open to learning new things and I am always looking for opportunities to grow and learn. 
+                    If you have any questions or would like to connect, feel free to reach out to me!
+                </div>
+                <div class="email-links">
+                    <p>Email:</p>
+                    <a href="mailto:taigaodonnell2001@gmail.com" 
+                       class="email-button">
+                       Taigaodonnell2001@gmail.com
+                    </a>
+                </div>
+            </div>
+        </section>
+     </main>
+</body>
+</html>
